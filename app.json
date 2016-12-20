@@ -1,0 +1,17 @@
+{
+  "name": "OA CORE BOT",
+  "description": "This app is a bot for CORE",
+  "website": "http://core.ac.uk",
+  "repository": "https://github.com/oacore/corebot",
+  "scripts": {
+    "postdeploy": "python oacorebot.py"
+  },
+
+  "image": "heroku/python",
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+  ]
+}
